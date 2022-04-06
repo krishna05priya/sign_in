@@ -58,7 +58,7 @@ app.get("/welcome",function(req,res){
     res.sendFile(__dirname + "/welcome.html");
 });
 
-//--------------------
+
 
 app.get("/database",function(req,res){
     connection.query("SELECT * FROM loginuser",function(err,rows,fields){
